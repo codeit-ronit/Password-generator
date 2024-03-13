@@ -55,7 +55,7 @@ function generatePassword(){
 
 sliderLength.addEventListener('input',()=>{
     sliderCount.textContent = sliderLength.value;
-    sliderLength.style.backgroundSize = (sliderLength.value/10)*100 - 5 + "% 100%";
+    sliderLength.style.backgroundSize = (sliderLength.value/20)*100 - 5 + "% 100%";
 })
 function strengthHandle(){
     let checkedArrLength = checkBoxArr.filter(item => {
