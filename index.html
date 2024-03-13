@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Password generator app</title>
+  <title>Password generator app</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <main class="container">
     <h1>Password Generator</h1>
-    <div class="password-field">
+    <div class="password-field"> 
       <span class="password-display">
-        <span class="password-placeholder">P4$5W0rD!</span>
+        <span class="password-placeholder">Generate Here</span>
       </span>
 
       <div class="copy-wrapper">
         <span class="copied-text"></span>
-        <button class="copy-btn">
-          <img src="./assets/images/icon-copy.svg" alt="Copy password">
+        <button class="copy-btn">Copy Password
         </button>
+
+        <i class="fa fa-clone" aria-hidden="true"></i>
       </div>
     </div>
 
@@ -33,11 +30,10 @@
       </div>
       <input 
         class="char-length-slider" 
-        aria-label="Password length" 
         type="range" 
         min="1" 
-        max="20" 
-        value="10" 
+        max="10" 
+        value="0" 
         autocomplete="off"
       />
       
@@ -48,12 +44,12 @@
           <p>Include Uppercase Letters</p>
         </label>
         <label>
-          <input type="checkbox" id="lowercase" value="lowercase" checked/>
+          <input type="checkbox" id="lowercase" value="lowercase" />
           <span class="custom-checkbox"></span>
           <p>Include Lowercase Letters</p>
         </label>
         <label>
-          <input type="checkbox" id="numbers" value="numbers" checked/>
+          <input type="checkbox" id="numbers" value="numbers" />
           <span class="custom-checkbox"></span>
           <p>Include Numbers</p>
         </label>
@@ -65,7 +61,7 @@
       </div>
 
       <div class="strength-box">
-        <span class="strength-label">Strength</span>
+        <span class="strength-label">STRENGTH</span>
         <div class="strength-rating">
           <span class="strength-rating-text"></span>
           <div class="strength-rating-bars">
@@ -79,19 +75,10 @@
 
       <button class="generate-btn" type="submit">
         <span>Generate</span>
-        <svg 
-          width="12" 
-          height="12" 
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path 
-            fill="#24232C" 
-            d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/>
-        </svg>
       </button>
     </form>
   </main>
 </body>
-<script src="script.js"></script>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/63f389e7e4.js" crossorigin="anonymous"></script>
 </html>
